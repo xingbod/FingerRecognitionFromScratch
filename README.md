@@ -2,7 +2,9 @@
 
 please run main.m to test the code.
 
-
+Coresponding to the blog article:
+1. 指纹识别源代码（1）-图像处理 [https://blog.csdn.net/MrCharles/article/details/79292496]
+2. 指纹识别源代码（2）-特征点提取 [https://blog.csdn.net/MrCharles/article/details/79300671]
 
 指纹采集----》预处理----》特征点提取----》特征点匹配
 
