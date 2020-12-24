@@ -1,9 +1,9 @@
-% ������ƥ��
-% ������ƥ��
-% tic; toc��ʱ
-% �ҵ�һ���������Ժ�������Χ�ҵ���ʮ���˵�򽻲�㣬ͳ����ʮ����Ľ����Ͷ˵�ĸ���
-% ������ͼ�ϵ�ռ�ı���������ͬ��ƥ��
-% fff=abs(f11-f21)/(f11+f12) Խ�ӽ���0 ƥ���Խ��
+% 特征点匹配
+% 点类型匹配
+% tic; toc计时
+% 找到一个特征点以后，在其周围找到四十个端点或交叉点，统计四十个点的交叉点和端点的个数
+% 若两幅图断点占的比例近似相同则匹配
+% fff=abs(f11-f21)/(f11+f12) 越接近于0 匹配度越高
 close all;
 tic;
 clear;
@@ -12,7 +12,8 @@ thin2=tuxiangyuchuli('zhiwen.png');
 figure;
 txy1=point(thin1);
 txy2=point(thin2);
-[w1,txy1]=guanghua(thin2,txy2);
+%[w1,txy1]=guanghua(thin2,txy2); Previous incorrect
+[w1,txy1]=guanghua(thin1,txy1);
 [w2,txy2]=guanghua(thin2,txy2);
 thin1=w1;
 thin2=w2;
