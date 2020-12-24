@@ -59,13 +59,13 @@ if ff<1
     error=0
 else error=1
 end
-cxy1(2:41,:)=find_point(pxy31(1,1),pxy31(1,2),txy1,40);
-cxy2(2:41,:)=find_point(pxy32(1,1),pxy32(1,2),txy2,40);
-f11=length(find(cxy1(:,3)==2));
-f12=length(find(cxy1(:,3)==6));
-f21=length(find(cxy2(:,3)==2));
-f22=length(find(cxy2(:,3)==6));
-fff=abs(f11-f21)/(f11+f12)
+%cxy1(2:41,:)=find_point(pxy31(1,1),pxy31(1,2),txy1,40);
+%cxy2(2:41,:)=find_point(pxy32(1,1),pxy32(1,2),txy2,40);
+%f11=length(find(cxy1(:,3)==2));
+%f12=length(find(cxy1(:,3)==6));
+%f21=length(find(cxy2(:,3)==2));
+%f22=length(find(cxy2(:,3)==6));
+%fff=abs(f11-f21)/(f11+f12)
 toc
 
 
